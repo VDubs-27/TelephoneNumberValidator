@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+main {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button#check-btn {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+button#check-btn:hover {
+  background-color: #0056b3;
+}
+
+button#clear-btn {
+  background-color: #ff4d4d;
+  color: #ffffff;
+}
+
+button#clear-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Results Div */
+#results-div {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
