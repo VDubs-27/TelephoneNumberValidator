@@ -10,7 +10,7 @@ const validateNumber = () => {
   if ((userInput.value.match(/-/g) || []).length > 2) {
     result.innerText = `Invalid US number: ${userInput.value}`;
   }
-  else if (openBrackets + closeBrackets === 1) {
+  else if ((openBrackets + closeBrackets) % 2 === 1) {
     result.innerText = `Invalid US number: ${userInput.value}`;
   }
   else if (rawNumber.length === 10 || rawNumber.length === 11) {
